@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap');
+
+h1{
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.box6{
+    background-color:rgba(245, 245, 245, 0.432);
+    border: 10px double black;
+    border-radius: 12px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 22.5%;
+    opacity: 0.8;
+}

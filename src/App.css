@@ -1,38 +1,40 @@
 .App {
   text-align: center;
+  background-image: url(https://source.unsplash.com/1600x900/?night);
+  mask-image: linear-gradient(var(--direction), black 100%, rgba(0, 0, 0, 0) 100%);
+  mask-position: 50% 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.custom-btn1{
+  padding: 10px;
+  margin-left: 0px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: 120px;
+  font-size: 20px;
+  border: 3px solid rgb(29, 29, 145);
+  background-color: rgba(141, 141, 210, 0.776);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-btn2{
+  padding: 10px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: 125px;
+  font-size: 20px;
+  border: 3px solid rgb(29, 29, 145);
+  background-color: rgba(141, 141, 210, 0.776);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+hr{
+  width: 1300px;
+  background-color: black;
+  height: 2px;
+  margin-bottom: 25px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --direction: -45deg;
 }
