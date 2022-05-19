@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Russo+One&display=swap");
+
+.c-box {
+  padding: 30px;
+  &__banderas{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    position: absolute;
+  }
+  &__castellano{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  &__ingles{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+  }
+  &__hero {
+    background-color: rgba(245, 245, 245, 0.162);
+    border: 10px double rgba(245, 245, 245, 0.772);
+    border-radius: 12px;
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 22.5%;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 10px rgba(245, 245, 245, 0.692);
+  }
+  &__name {
+    font-family: "Russo One", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    width: 40%;
+    margin-left: 30%;
+  }
+  &__date {
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+  &__city {
+    font-family: "Russo One", sans-serif;
+  }
+  &__email {
+    font-family: "Russo One", sans-serif;
+    color: whitesmoke;
+  }
+  &__mobile {
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-family: "Russo One", sans-serif;
+    font-weight: bold;
+  }
+  &__aboutme {
+    font-family: 'Russo One';
+  }
+  &__iconos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__linkedin{
+    width: 40px;
+    height: 40px;
+  }
+  &__github{
+    width: 40px;
+    height: 40px;
+  }
+  &__instagram{
+    width: 40px;
+    height: 40px;
+  }
+  &__twitter{
+    width: 40px;
+    height: 40px;
+  }
+  &__facebook{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+button{
+  background: transparent;
+  outline: none;
+  border: none;
+}

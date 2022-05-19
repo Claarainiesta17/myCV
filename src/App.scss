@@ -1,33 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Russo+One&display=swap");
+
 .App {
   text-align: center;
 }
 
-.wrapper {
+.wrapper{
+  
   background: url("https://t3.ftcdn.net/jpg/03/98/18/08/360_F_398180803_RduwLMvsnC9dOroklmmS6yvPufvszF8G.jpg");
   color: #eee;
   width: 100%;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-perspective-origin: 50% 50%;
-          perspective-origin: 50% 50%;
-  -webkit-animation: animation 100s linear infinite;
-          animation: animation 100s linear infinite;
-}
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
 
-@-webkit-keyframes animation {
-  100% {
-    background-position: 0px -3000px;
-  }
 }
 
 @keyframes animation {
-  100% {
-    background-position: 0px -3000px;
-  }
+  100%{
+   background-position:0px -3000px;
+ }
 }
 
-.custom-btn1 {
+
+.custom-btn1{
   padding: 10px;
   margin-left: 0px;
   margin-bottom: 20px;
@@ -35,15 +30,14 @@
   font-family: "Russo One", sans-serif;
   width: 120px;
   font-size: 17px;
-  border: 3px solid #871f1f;
-  background-color: #cc8b8b;
+  border: 3px solid rgb(135, 31, 31);
+  background-color: rgb(204, 139, 139);
   color: black;
   cursor: pointer;
-  -webkit-box-shadow: 5px 5px 5px #c25d5d;
-          box-shadow: 5px 5px 5px #c25d5d;
+  box-shadow: 5px 5px 5px rgb(194, 93, 93);
 }
 
-.custom-btn2 {
+.custom-btn2{
   padding: 10px;
   margin-left: 40px;
   margin-bottom: 20px;
@@ -51,17 +45,16 @@
   font-family: "Russo One", sans-serif;
   width: 125px;
   font-size: 17px;
-  border: 3px solid #871f1f;
-  background-color: #cc8b8b;
+  border: 3px solid rgb(135, 31, 31);
+  background-color: rgb(204, 139, 139);
   color: black;
   cursor: pointer;
-  -webkit-box-shadow: 5px 5px 5px #c25d5d;
-          box-shadow: 5px 5px 5px #c25d5d;
+  box-shadow: 5px 5px 5px rgb(194, 93, 93);
 }
 
-hr {
+hr{
   width: 1100px;
-  background-color: #871f1f;
+  background-color: rgb(135, 31, 31);
   height: 2px;
   margin-bottom: 40px;
 }
@@ -69,4 +62,3 @@ hr {
 :root {
   --direction: -45deg;
 }
-/*# sourceMappingURL=App.css.map */

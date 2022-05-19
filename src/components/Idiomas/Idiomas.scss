@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Russo+One&display=swap");
+
+.c-box{
+    padding: 30px;
+    &__idiomas{
+        background-color: rgba(245, 245, 245, 0.162);
+        border: 10px double rgba(245, 245, 245, 0.772);
+        border-radius: 12px;
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 22.5%;
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 10px rgba(245, 245, 245, 0.692);
+    }
+    &__languages{
+        font-family: "Russo One", sans-serif;
+    }
+    &__language{
+        font-family: "Russo One", sans-serif;
+        font-weight: bold;
+    }
+    &__level{
+        font-family: "Russo One", sans-serif;
+    }
+}

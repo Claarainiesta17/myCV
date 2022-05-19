@@ -1,31 +1,36 @@
-import './Experience.css';
-
+import './Experience.scss';
+import { useTranslation } from "react-i18next";
 export default function Experience(){
+    const { t, i18n } = useTranslation("translation");
+
+    const changeLanguage = (code) => {
+        i18n.changeLanguage(code);
+};
     return (
-        <div className="box4">
-        <h3>🎺Trombone teacher</h3>
-        <p>Aula de Música 7 (Barcelona)</p>
-        <p>2020 - At the moment</p>
-        <h3>🎭Director, researcher and designer of an exhibition</h3>
-        <a href="https://3aclarainiesta17.wixsite.com/centenari-pedrell/">Centenary of the death of Felipe Pedrell</a>
-        <p>Conservatori de música de Tortosa (Tortosa)</p>
-        <p>2022</p>
-        <h3>📠Security telemarketer</h3>
-        <p>Securitas Direct (Barcelona)</p>
-        <p>2021-2022</p>
-        <h3>📚Musicologist and Museologist</h3>
-        <p>CRAI Biblioteca de Reserva (Barcelona)</p>
-        <p>2020</p>
-        <h3>🚑Medical emergency manager</h3>
-        <p>Teladoc Health (Barcelona)</p>
-        <p>2020</p>
-        <h3>🎨Museum assistant</h3>
-        <p>Museu de la Música (Barcelona)</p>
-        <p>2019</p>
-        <h3>🎙Radio host</h3>
-        <a href="https://radiotortosa.cat/shows/mousike/">Mousiké</a>
-        <p>Ràdio Tortosa</p>
-        <p>2017</p>
+        <div className="c-box">
+        <div className="c-box__experience">
+        <h3 className="c-box__position">🎺{t("trombon")}</h3>
+        <p className="c-box__business">Aula de Música 7 (Barcelona)</p>
+        <p className="c-box__duration">2020 - 2022</p>
+        <h3 className="c-box__position">🎭{t("curator")}</h3>
+        <p className="c-box__business">{t("diputacio")}</p>
+        <p className="c-box__duration">2022</p>
+        <h3 className="c-box__position">📠{t("securitas")}</h3>
+        <p className="c-box__business">Securitas Direct (Barcelona)</p>
+        <p className="c-box__duration">2021-2022</p>
+        <h3 className="c-box__position">📚{t("musicologist")}</h3>
+        <p className="c-box__business">{t("library")}</p>
+        <p className="c-box__duration">2020</p>
+        <h3 className="c-box__position">🚑{t("medical")}</h3>
+        <p className="c-box__business">Teladoc Health (Barcelona)</p>
+        <p className="c-box__duration">2020</p>
+        <h3 className="c-box__position">🎨{t("assistant")}</h3>
+        <p className="c-box__business">{t("museum")}</p>
+        <p className="c-box__duration">2019</p>
+        <h3 className="c-box__position">🎙{t("radio")}</h3>
+        <p className="c-box__business">Ràdio Tortosa</p>
+        <p className="c-box__duration">2017</p>
+        </div>
         </div>
     )
 }
